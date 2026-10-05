@@ -1,6 +1,12 @@
 # 🥑 US Avocado Retail Sales Analysis (Google Data Analytics Case Study)
 
-An end-to-end data analytics project investigating price elasticity, regional premium pricing hot spots, and seasonal demand trends for conventional and organic avocados. This case study follows the **Google Data Analytics Framework**: *Ask, Prepare, Process, Analyze, Share, and Act*.
+An end-to-end data analytics project investigating price elasticity, regional premium pricing hotspots, and seasonal demand trends for conventional and organic avocados. This case study follows the **Google Data Analytics Framework**: *Ask, Prepare, Process, Analyze, Share, and Act*.
+
+---
+
+## 📂 Project Structure
+* `avocado_cleaned.ipynb`: The complete Jupyter Notebook containing all data cleaning, analysis, and visualization source code.
+* `avocado_cleaned.csv`: The processed, clean dataset used for analysis.
 
 ---
 
@@ -13,21 +19,14 @@ An end-to-end data analytics project investigating price elasticity, regional pr
 
 ## 📂 Phase 2: Prepare
 * **Data Source:** Historically generated retail scan data from the Hass Avocado Board (originally compiled by Justin Kiggins, CC0 Public Domain).
-* **Data Organization:** The raw dataset (`avocado.csv`) contains weekly transactional records across multiple years (2015–2018) mapped by unique US cities and regions.
-* **Credibility Check (ROCCC):** 
-  * **R**eliable: Sourced directly from grocery register scanners.
-  * **O**riginal: Collected directly by the Hass Avocado Board.
-  * **C**omprehensive: Includes volume metric splits, PLU types, and geographical labels.
-  * **C**urrent: Represents fundamental, structural retail demand models.
-  * **C**ited: Publicly documented and vetted.
+* **Data Organization:** The raw dataset contains weekly transactional records across multiple years (2015–2018) mapped by unique US cities and regions.
+* **Credibility Check (ROCCC):** Sourced directly from grocery register scanners, making it highly reliable and original.
 
 ---
 
-## 🐍 Phase 3: Process
-Data cleaning and transformations were executed via Python in a Google Colab notebook environment. 
-* Checked for structural integrity (confirmed **0 missing entries** and **0 duplicate rows**).
-* Eliminated redundant tracking indices (`Unnamed: 0`).
-* Standardized text inputs (`type`, `region`) to lower-case formats.
+## 🐍 Phase 3: Process & Data Integrity
+Data cleaning and transformations were executed via Python in a Jupyter Notebook environment:
+* Verified that the dataset contains **0 missing entries** and **0 duplicate rows**.
 * Transformed generic PLU item attributes (`4046`, `4225`, `4770`) into human-readable definitions (`small_hass_sold`, `medium_hass_sold`, `large_hass_sold`).
 * Parsed text objects into explicit `datetime` stamps to programmatically extract `month` and `year` trackers.
 
@@ -65,5 +64,7 @@ Based on the data-driven insights discovered above, the following tactical imple
 
 ## 🛠️ Tools & Technologies Used
 * **Language:** Python
-* **Libraries:** Pandas (Data manipulation), Matplotlib & Seaborn (Data visualization)
-* **Environment:** Google Colab / Jupyter Notebooks
+* **Libraries:** Pandas, Matplotlib, Seaborn
+* **Environment:** Jupyter Notebook / Google Colab
+
+
